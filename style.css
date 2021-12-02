@@ -97,43 +97,43 @@ select {
 /********** FONTS **********/
 @font-face {
 	font-family: 'Gotham Medium';
-	src: url('fonts/Gotham Medium.eot');
-	src: local('☺'), url('fonts/Gotham Medium.woff') format('woff'), url('fonts/Gotham Medium.ttf') format('truetype'), url('fonts/Gotham Medium.svg') format('svg');
+	src: url('Fonts/Gotham Medium.eot');
+	src: local('☺'), url('Fonts/Gotham Medium.woff') format('woff'), url('Fonts/Gotham Medium.ttf') format('truetype'), url('Fonts/Gotham Medium.svg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Gotham Office';
-	src: url('fonts/GothamOffice-Bold.eot');
-	src: local('☺'), url('fonts/GothamOffice-Bold.woff') format('woff'), url('fonts/GothamOffice-Bold.ttf') format('truetype'), url('fonts/GothamOffice-Bold.svg') format('svg');
+	src: url('Fonts/GothamOffice-Bold.eot');
+	src: local('☺'), url('Fonts/GothamOffice-Bold.woff') format('woff'), url('Fonts/GothamOffice-Bold.ttf') format('truetype'), url('Fonts/GothamOffice-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Gotham Office';
-	src: url('fonts/GothamOffice-Regular.eot');
-	src: local('☺'), url('fonts/GothamOffice-Regular.woff') format('woff'), url('fonts/GothamOffice-Regular.ttf') format('truetype'), url('fonts/GothamOffice-Regular.svg') format('svg');
+	src: url('Fonts/GothamOffice-Regular.eot');
+	src: local('☺'), url('Fonts/GothamOffice-Regular.woff') format('woff'), url('Fonts/GothamOffice-Regular.ttf') format('truetype'), url('Fonts/GothamOffice-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Myriad Pro';
 	src: url('fonts/MyriadPro-Regular.eot');
-	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	src: local('☺'), url('Fonts/MyriadPro-Regular.woff') format('woff'), url('Fonts/MyriadPro-Regular.ttf') format('truetype'), url('Fonts/MyriadPro-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Open Sans';
-	src: url('fonts/OpenSans-Medium.eot');
-	src: local('☺'), url('fonts/OpenSans-Medium.woff') format('woff'), url('fonts/OpenSans-Medium.ttf') format('truetype'), url('fonts/OpenSans-Medium.svg') format('svg');
+	src: url('Fonts/OpenSans-Medium.eot');
+	src: local('☺'), url('Fonts/OpenSans-Medium.woff') format('woff'), url('Fonts/OpenSans-Medium.ttf') format('truetype'), url('Fonts/OpenSans-Medium.svg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Roboto Condensed';
-	src: url('fonts/RobotoCondensed.eot');
-	src: local('☺'), url('fonts/RobotoCondensed.woff') format('woff'), url('fonts/RobotoCondensed.ttf') format('truetype'), url('fonts/RobotoCondensed.svg') format('svg');
+	src: url('Fonts/RobotoCondensed.eot');
+	src: local('☺'), url('Fonts/RobotoCondensed.woff') format('woff'), url('Fonts/RobotoCondensed.ttf') format('truetype'), url('Fonts/RobotoCondensed.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
