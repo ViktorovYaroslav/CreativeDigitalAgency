@@ -120,6 +120,7 @@ select {
 /********** HEADER **********/
 .header{
 	position: relative;
+   z-index: 50;
 }
 .header__background{
 	position: absolute;
@@ -173,7 +174,7 @@ select {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-100%, -100%) rotate(45deg);
+   transform: translate(-50%, -50%) rotate(45deg);
 }
 .burger__checkbox:checked ~ .burger__button > .burger__line_middle {
    display: none;
@@ -182,7 +183,7 @@ select {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-100%, -100%) rotate(-45deg);
+   transform: translate(-50%, -50%) rotate(-45deg);
 }
 .burger__button > *{
    background: #fff;
@@ -1069,6 +1070,10 @@ select {
 	.burger__button{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
    }
    .burger__checkbox:checked ~ .header__menu{
       display: block;
