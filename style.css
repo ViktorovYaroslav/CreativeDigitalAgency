@@ -97,43 +97,43 @@ select {
 /********** FONTS **********/
 @font-face {
 	font-family: 'Gotham Medium';
-	src: url('Fonts/Gotham Medium.eot');
-	src: local('☺'), url('Fonts/Gotham Medium.woff') format('woff'), url('Fonts/Gotham Medium.ttf') format('truetype'), url('Fonts/Gotham Medium.svg') format('svg');
+	src: url('fonts/Gotham Medium.eot');
+	src: local('☺'), url('fonts/Gotham Medium.woff') format('woff'), url('fonts/Gotham Medium.ttf') format('truetype'), url('fonts/Gotham Medium.svg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Gotham Office';
-	src: url('Fonts/GothamOffice-Bold.eot');
-	src: local('☺'), url('Fonts/GothamOffice-Bold.woff') format('woff'), url('Fonts/GothamOffice-Bold.ttf') format('truetype'), url('Fonts/GothamOffice-Bold.svg') format('svg');
+	src: url('fonts/GothamOffice-Bold.eot');
+	src: local('☺'), url('fonts/GothamOffice-Bold.woff') format('woff'), url('fonts/GothamOffice-Bold.ttf') format('truetype'), url('fonts/GothamOffice-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Gotham Office';
-	src: url('Fonts/GothamOffice-Regular.eot');
-	src: local('☺'), url('Fonts/GothamOffice-Regular.woff') format('woff'), url('Fonts/GothamOffice-Regular.ttf') format('truetype'), url('Fonts/GothamOffice-Regular.svg') format('svg');
+	src: url('fonts/GothamOffice-Regular.eot');
+	src: local('☺'), url('fonts/GothamOffice-Regular.woff') format('woff'), url('fonts/GothamOffice-Regular.ttf') format('truetype'), url('fonts/GothamOffice-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Myriad Pro';
-	src: url('Fonts/MyriadPro-Regular.eot');
-	src: local('☺'), url('Fonts/MyriadPro-Regular.woff') format('woff'), url('Fonts/MyriadPro-Regular.ttf') format('truetype'), url('Fonts/MyriadPro-Regular.svg') format('svg');
+	src: url('fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Open Sans';
-	src: url('Fonts/OpenSans-Medium.eot');
-	src: local('☺'), url('Fonts/OpenSans-Medium.woff') format('woff'), url('Fonts/OpenSans-Medium.ttf') format('truetype'), url('Fonts/OpenSans-Medium.svg') format('svg');
+	src: url('fonts/OpenSans-Medium.eot');
+	src: local('☺'), url('fonts/OpenSans-Medium.woff') format('woff'), url('fonts/OpenSans-Medium.ttf') format('truetype'), url('fonts/OpenSans-Medium.svg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Roboto Condensed';
-	src: url('Fonts/RobotoCondensed.eot');
-	src: local('☺'), url('Fonts/RobotoCondensed.woff') format('woff'), url('Fonts/RobotoCondensed.ttf') format('truetype'), url('Fonts/RobotoCondensed.svg') format('svg');
+	src: url('fonts/RobotoCondensed.eot');
+	src: local('☺'), url('fonts/RobotoCondensed.woff') format('woff'), url('fonts/RobotoCondensed.ttf') format('truetype'), url('fonts/RobotoCondensed.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -147,25 +147,17 @@ select {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
+	object-fit: cover;
 }
 .wrapper{
 	overflow: hidden;
 	margin: 0 auto;
 	min-height: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column
+	flex-direction: column
 }
 .main{
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 auto;
-	        flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 /********** HEADER **********/
 .header{
@@ -203,12 +195,8 @@ select {
    position: relative;
 }
 .header__items{
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-           justify-content: space-between;
+   justify-content: space-between;
 }
 .burger__checkbox {
       display: none;
@@ -217,9 +205,7 @@ select {
       height: 0;
       left: 0;
       top: 0;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
+      appearance: none;
 }
 .burger__button{
    display: none;
@@ -229,9 +215,7 @@ select {
    position: absolute;
    top: 50%;
    left: 50%;
-   -webkit-transform: translate(-100%, -100%) rotate(45deg);
-       -ms-transform: translate(-100%, -100%) rotate(45deg);
-           transform: translate(-100%, -100%) rotate(45deg);
+   transform: translate(-100%, -100%) rotate(45deg);
 }
 .burger__checkbox:checked ~ .burger__button > .burger__line_middle {
    display: none;
@@ -240,9 +224,7 @@ select {
    position: absolute;
    top: 50%;
    left: 50%;
-   -webkit-transform: translate(-100%, -100%) rotate(-45deg);
-       -ms-transform: translate(-100%, -100%) rotate(-45deg);
-           transform: translate(-100%, -100%) rotate(-45deg);
+   transform: translate(-100%, -100%) rotate(-45deg);
 }
 .burger__button > *{
    background: #fff;
@@ -706,12 +688,8 @@ select {
 	line-height: 160%;
 }
 .benefits__item-image {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
+	justify-content: flex-end;
 }
 .benefits__line{
 	background: #11749e;
@@ -852,6 +830,7 @@ select {
 /********** CONTACT US **********/
 .contact-us{
 	position: relative;
+   
 }
 .contact-us__bg{
 	position: absolute;
@@ -861,6 +840,7 @@ select {
 	height: 100%;
 }
 .contact-us__content{
+   padding-bottom: 15px;
 	position: relative;
 	z-index: 5;
 }
@@ -967,6 +947,7 @@ select {
 }
 /********** MAP **********/
 .map {
+   display: block;
 	padding-bottom: 20%;
 }
 /********** FOOTER **********/
@@ -1027,9 +1008,7 @@ select {
 }
 @media (max-width: 1550px){
 	.team__column{
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 1 50%;
-		        flex: 0 1 50%;
+		flex: 0 1 50%;
 	}
 
 }
@@ -1124,22 +1103,14 @@ select {
    .header__head{
       padding: 15px;
       width: 100%;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      flex-direction: row;
       background: rgba(29, 29, 29, 0.7);
       position: fixed;
       z-index: 50;
    }
 	.burger__button{
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      flex-direction: column;
    }
    .burger__checkbox:checked ~ .header__menu{
       display: block;
@@ -1157,10 +1128,7 @@ select {
       display: none;
    }
    .header__menu{
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      flex-direction: column;
    }
    .header__link{
       padding: 10px 5px;
