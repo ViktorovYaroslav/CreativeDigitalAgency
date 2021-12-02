@@ -147,17 +147,25 @@ select {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .wrapper{
 	overflow: hidden;
 	margin: 0 auto;
 	min-height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column
 }
 .main{
-	flex: 1 1 auto;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
 }
 /********** HEADER **********/
 .header{
@@ -195,8 +203,12 @@ select {
    position: relative;
 }
 .header__items{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: space-between;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
 }
 .burger__checkbox {
       display: none;
@@ -205,7 +217,9 @@ select {
       height: 0;
       left: 0;
       top: 0;
-      appearance: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
 }
 .burger__button{
    display: none;
@@ -215,7 +229,9 @@ select {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-100%, -100%) rotate(45deg);
+   -webkit-transform: translate(-100%, -100%) rotate(45deg);
+       -ms-transform: translate(-100%, -100%) rotate(45deg);
+           transform: translate(-100%, -100%) rotate(45deg);
 }
 .burger__checkbox:checked ~ .burger__button > .burger__line_middle {
    display: none;
@@ -224,7 +240,9 @@ select {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-100%, -100%) rotate(-45deg);
+   -webkit-transform: translate(-100%, -100%) rotate(-45deg);
+       -ms-transform: translate(-100%, -100%) rotate(-45deg);
+           transform: translate(-100%, -100%) rotate(-45deg);
 }
 .burger__button > *{
    background: #fff;
@@ -688,8 +706,12 @@ select {
 	line-height: 160%;
 }
 .benefits__item-image {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 .benefits__line{
 	background: #11749e;
@@ -1005,7 +1027,9 @@ select {
 }
 @media (max-width: 1550px){
 	.team__column{
-		flex: 0 1 50%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 50%;
+		        flex: 0 1 50%;
 	}
 
 }
@@ -1100,14 +1124,22 @@ select {
    .header__head{
       padding: 15px;
       width: 100%;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       background: rgba(29, 29, 29, 0.7);
       position: fixed;
       z-index: 50;
    }
 	.burger__button{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
    }
    .burger__checkbox:checked ~ .header__menu{
       display: block;
@@ -1125,7 +1157,10 @@ select {
       display: none;
    }
    .header__menu{
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
    }
    .header__link{
       padding: 10px 5px;
