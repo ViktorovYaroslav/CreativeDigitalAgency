@@ -194,6 +194,10 @@ select {
 	    flex-wrap: wrap;
    position: relative;
 }
+.header__items{
+   display: flex;
+   justify-content: space-between;
+}
 .burger__checkbox {
       display: none;
       position: absolute;
@@ -202,9 +206,6 @@ select {
       left: 0;
       top: 0;
       appearance: none;
-}
-.burger__checkbox:checked ~ .header__items{
-   display: block;
 }
 .burger__button{
    display: none;
@@ -1107,9 +1108,11 @@ select {
 	.burger__button{
       display: flex;
       flex-direction: column;
-   
    }
-   .header__items{
+   .burger__checkbox:checked ~ .header__menu{
+      display: block;
+   }
+   .header__menu{
       background: rgba(29, 29, 29, 0.7);
       padding: 15px;
       display: none;
@@ -1117,6 +1120,9 @@ select {
       top: 100%;
       left: 0;
       width: 100vw;
+   }
+   .header__contacts{
+      display: none;
    }
    .header__menu{
       flex-direction: column;
